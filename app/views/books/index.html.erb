@@ -1,0 +1,92 @@
+<h1>Books</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td>リーダブルコード</td>
+        <td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+        <td><a class="show_154892" href="/books/154892">Show</a></td>
+        <td><a class="edit_154892" href="/books/154892/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154892" rel="nofollow" data-method="delete" href="/books/154892">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>トラブル知らずのシステム設計</td>
+        <td>システム設計の要点を図解で説明してくれます</td>
+        <td><a class="show_154893" href="/books/154893">Show</a></td>
+        <td><a class="edit_154893" href="/books/154893/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154893" rel="nofollow" data-method="delete" href="/books/154893">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>たのしいRuby</td>
+        <td>Rubyの入門におすすめです</td>
+        <td><a class="show_154894" href="/books/154894">Show</a></td>
+        <td><a class="edit_154894" href="/books/154894/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154894" rel="nofollow" data-method="delete" href="/books/154894">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>入門Git</td>
+        <td>gitについての基本操作から内部構造まで解説してくれます</td>
+        <td><a class="show_154895" href="/books/154895">Show</a></td>
+        <td><a class="edit_154895" href="/books/154895/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154895" rel="nofollow" data-method="delete" href="/books/154895">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>アルゴリズム図鑑</td>
+        <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+        <td><a class="show_154896" href="/books/154896">Show</a></td>
+        <td><a class="edit_154896" href="/books/154896/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154896" rel="nofollow" data-method="delete" href="/books/154896">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>達人プログラマー</td>
+        <td>プログラマ入門者は必読！</td>
+        <td><a class="show_154897" href="/books/154897">Show</a></td>
+        <td><a class="edit_154897" href="/books/154897/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154897" rel="nofollow" data-method="delete" href="/books/154897">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>データベース実践入門</td>
+        <td>効率的なSQL文を教えてくれます</td>
+        <td><a class="show_154898" href="/books/154898">Show</a></td>
+        <td><a class="edit_154898" href="/books/154898/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154898" rel="nofollow" data-method="delete" href="/books/154898">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>ゼロから作るDeep Learning</td>
+        <td>ディープラーニングの本格的な入門書。外部のライブラリに頼らずに、Python 3によってゼロからディープラーニングを作ることで、ディープラーニングの原理を楽しく学びます。
+ディープラーニングやニューラルネットワークの基礎だけでなく、誤差逆伝播法や畳み込みニューラルネットワークなども実装レベルで理解できます。</td>
+        <td><a class="show_154899" href="/books/154899">Show</a></td>
+        <td><a class="edit_154899" href="/books/154899/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154899" rel="nofollow" data-method="delete" href="/books/154899">Destroy</a></td>
+      </tr>
+  </tbody>
+</table>
+
+
+<h2>New book</h2>
+<form class="new_book" id="new_book" action="/books" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="HdmfpXE5UTdi6J1InDqdycP+lMJLK6vz670FAAUX9n8J9hqt7GItqhMtYYhF0T24/mmpXkcyJspJfajWpaKy1A==" />
+
+  <div class="field">
+    <label for="book_title">Title</label>
+    <input class="book_title" type="text" name="book[title]" id="book_title" />
+  </div>
+
+  <div class="field">
+    <label for="book_body">Body</label>
+    <textarea class="book_body" name="book[body]" id="book_body">
+</textarea>
+  </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Create Book" data-disable-with="Create Book" />
+  </div>
+</form>
+  </body>
+</html>
