@@ -1,0 +1,97 @@
+<head>
+
+  <meta name="csrf-param" content="authenticity_token" />
+	<meta name="csrf-token" content="8HT7IavLcS4xN0nyc22rAdRfGTYgZI/Vuc8YJKCyK8H0ZU1lrY5/UjT454jd+Qtk0G0e3OyTfxJlr+FgaKDjhg==" />
+
+  <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload" />
+  <script src="/assets/application-4e370d3723b6f204426a9414077d365ea07814cce5619ae24fb7e581988f19ed.js" data-turbolinks-track="reload"></script>
+</head>
+
+<body>
+	<p id="notice"></p>
+
+	<h1>Books</h1>
+
+	<table>
+  	<thead>
+    	<tr>
+     		<th>Title</th>
+   	 		<th>Body</th>
+   	 		<th colspan="3"></th>
+  	  </tr>
+  	</thead>
+
+  	<tbody>
+  	 	<tr>
+ 	 	 		<td>リーダブルコード</td>
+ 	 	 		<td>より良いコードを書くためのシンプルで実践的なテクニック</td>
+      	<td><a class="show_154910" href="/books/154910">Show</a></td>
+      	<td><a class="edit_154910" href="/books/154910/edit">Edit</a></td>
+      	<td><a data-confirm="Are you sure?" class="destroy_154910" rel="nofollow" data-method="delete" href="/books/154910">Destroy</a></td>
+      </tr>
+     	<tr>
+      	<td>トラブル知らずのシステム設計</td>
+      		<td>システム設計の要点を図解で説明してくれます</td>
+      		<td><a class="show_154911" href="/books/154911">Show</a></td>
+        	<td><a class="edit_154911" href="/books/154911/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154911" rel="nofollow" data-method="delete" href="/books/154911">Destroy</a></td>
+      </tr>
+      <tr>
+      	<td>たのしいRuby</td>
+        <td>Rubyの入門におすすめです</td>
+        <td><a class="show_154912" href="/books/154912">Show</a></td>
+        <td><a class="edit_154912" href="/books/154912/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154912" rel="nofollow" data-method="delete" href="/books/154912">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>入門Git</td>
+        <td>gitについての基本操作から内部構造まで解説してくれます</td>
+        <td><a class="show_154913" href="/books/154913">Show</a></td>
+        <td><a class="edit_154913" href="/books/154913/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154913" rel="nofollow" data-method="delete" href="/books/154913">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>アルゴリズム図鑑</td>
+        <td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+        <td><a class="show_154914" href="/books/154914">Show</a></td>
+        <td><a class="edit_154914" href="/books/154914/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154914" rel="nofollow" data-method="delete" href="/books/154914">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>達人プログラマー</td>
+        <td>プログラマ入門者は必読！</td>
+        <td><a class="show_154915" href="/books/154915">Show</a></td>
+        <td><a class="edit_154915" href="/books/154915/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154915" rel="nofollow" data-method="delete" href="/books/154915">Destroy</a></td>
+      </tr>
+      <tr>
+        <td>データベース実践入門</td>
+        <td>効率的なSQL文を教えてくれます</td>
+        <td><a class="show_154916" href="/books/154916">Show</a></td>
+        <td><a class="edit_154916" href="/books/154916/edit">Edit</a></td>
+        <td><a data-confirm="Are you sure?" class="destroy_154916" rel="nofollow" data-method="delete" href="/books/154916">Destroy</a></td>
+      </tr>
+    </tbody>
+	</table>
+
+
+	<h2>New book</h2>
+		<form class="new_book" id="new_book" action="/books" accept-charset="UTF-8" method="post">
+			<input name="utf8" type="hidden" value="&#x2713;" />
+			<input type="hidden" name="authenticity_token" value="2qgz8yKAbD58+Am4wmNSHdib445ndGdMQUhIO3zoIDPOh7b7v9sQow099XgbiPJs5QzeEmtt6nXjiOXt3F1kmA==" />
+
+  		<div class="field">
+  		  <label for="book_title">Title</label>
+  		  <input class="book_title" type="text" name="book[title]" id="book_title" />
+  		</div>
+
+ 			<div class="field">
+   		 	<label for="book_body">Body</label>
+    		<textarea class="book_body" name="book[body]" id="book_body"></textarea>
+  		</div>
+
+  		<div class="actions">
+    		<input type="submit" name="commit" value="Create Book" data-disable-with="Create Book" />
+  		</div>
+		</form>
+</body>
