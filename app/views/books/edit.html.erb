@@ -14,9 +14,9 @@
   </div>
 
   <div class="actions">
-    <%= f.submit '保存' %>
+    <%= f.submit 'Update Book' %>
   </div>
-</form>
+<% end %>
 
-<a class="show_155048" href="/books/155048">Show</a> |
-<a class="back" href="/books">Back</a>
+<a><%= link_to 'show', book_path(@book) %></a> |
+<a><%= link_to 'Back', books_path %></a>
